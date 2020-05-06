@@ -26,6 +26,11 @@
           value: 0.01,
           notify: true,
         },
+        maxPoints: {
+          type: Number,
+          value: 307200,
+          notify: true
+        },
         globalOptions: Object,
         isShown: Boolean,
         ros: Object,
@@ -80,7 +85,7 @@
           material: {
             size: this.size,
           },
-          max_pts: 307200,
+          max_pts: this.maxPoints,
           tfClient: this.tfClient,
           rootObject: this.viewer.scene
         });
